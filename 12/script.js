@@ -39,7 +39,6 @@
     console.log(sports);
 
     winter_sports = sports.slice([0], [5]);
-    winter_sports[join(": ")]
     console.log(winter_sports);
 
     summer_sports = sports.slice([5]);
