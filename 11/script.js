@@ -30,10 +30,11 @@ rainbow_reverse.unshift('Richard');
 //onsole.log(rainbow_reverse);
 
 rainbow_reverse.push('In', 'Vain');
-console.log(rainbow_reverse);
+//console.log(rainbow_reverse);
 
 
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet '];
+// rainbow_reverse= ['Richard', 'Of', 'York', 'Gave', 'Battle', 'In', 'Vain']
 
 circleArr = [];
 
@@ -41,11 +42,17 @@ for (i = 0; i < colors.length; i++) {
     circleArr.push(`<div class="circle" style="background-color: ${colors[i]}"></div>`);
 };
 
+
+newArr = [
+    [circleArr.join(" ")],
+    [rainbow_reverse.join(" ")]
+];
+console.log(newArr);
+
+
+
 document.write(`
-    <div class="wrapp">
-        ${circleArr.join(" ")}
-    </div>
-    <div class="rainbow">
-    ${rainbow_reverse.join(" ")}
-    </div>
-`);
+<div class="wrapp">
+${newArr}
+</div>
+`)
