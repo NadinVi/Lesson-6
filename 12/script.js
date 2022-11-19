@@ -37,18 +37,13 @@ sports = [
     ['bicyclist', '🚴‍']
 ];
 
-winter_sports = sports.slice([0], [5]);
-summer_sports = sports.slice([5]);
-//console.log(winter_sports);
-//console.log(summer_sports);
+summer_sports = sports.slice(5, 11);
+winter_sports = sports.slice(0, 5);
 
 fruits = [];
 fruits_winter = winter_sports.splice([2], 1);
 fruits_summer = summer_sports.splice([2], 2);
 fruits = fruits_winter.concat(fruits_summer);
-
-//console.log(fruits);
-//console.log(fruits_winter.concat(fruits_summer));
 
 console.log(`*** Winter sports ***`);
 for (i = 0; i < winter_sports.length; i++) {
