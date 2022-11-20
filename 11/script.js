@@ -15,44 +15,36 @@ native = ['York', 'Of'];
 destination = ['Poltava', 'In'];
 
 rainbow = hero.concat(native, destination);
-//console.log(rainbow);
-
 rainbow_reverse = rainbow.reverse();
-//console.log(rainbow_reverse); //['In', 'Poltava', 'Of', 'York', 'Ivan']
-
 rainbow_reverse.pop();
-//console.log(rainbow_reverse);
-
 rainbow_reverse.splice(0, 2) && rainbow_reverse.splice(3, 2, 'Gave', 'Battle');
-//console.log(rainbow_reverse);
-
 rainbow_reverse.unshift('Richard');
-//onsole.log(rainbow_reverse);
-
 rainbow_reverse.push('In', 'Vain');
-//console.log(rainbow_reverse);
 
 
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet '];
-// rainbow_reverse= ['Richard', 'Of', 'York', 'Gave', 'Battle', 'In', 'Vain']
 
 circleArr = [];
-
 for (i = 0; i < colors.length; i++) {
-    circleArr.push(`<div class="circle" style="background-color: ${colors[i]}"></div>`);
+    circleArr.push(`<div class="circle" style="background-color:${colors[i]}"></div>`);
 };
 
 
-newArr = [
-    [circleArr.join(" ")],
-    [rainbow_reverse.join(" ")]
-];
-console.log(newArr);
+rainbowArr = [];
+for (j = 0; j < rainbow_reverse.length; j++) {
+    rainbowArr.push(`<div class="rainbow">${rainbow_reverse[j]}</div>`);
+};
 
 
 
 document.write(`
-<div class="wrapp">
-${newArr}
-</div>
+    <div class="wrapp">
+        <div class="circle_container">
+            ${circleArr.join(" ")}
+        </div>
+        <div class="rainbow_container"> 
+            ${rainbowArr.join(" ")}
+        </div>
+    </div>
 `)
+

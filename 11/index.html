@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,41 @@
 	<style>
 		.wrapp {
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			align-items: center;
 		}
-		
-		.circle {
-			border-radius: 50%;
-			height: 30px;
-			width: 30px;
+
+		.circle_container {
+			display: flex;
 		}
 
+		.circle {
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+		}
+
+		.circle:not(:last-child) {
+			margin-right: 30px;
+		}
+
+		.rainbow_container {
+			display: flex;
+		}
+
+		.rainbow {
+			display: flex;
+			justify-content: center;
+			width: 50px;
+		}
+
+		.rainbow:not(:last-child) {
+			margin-right: 30px;
+		}
 	</style>
 </head>
+
 <body>
 </body>
+
 </html>
