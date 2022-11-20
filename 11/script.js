@@ -21,7 +21,6 @@ rainbow_reverse.splice(0, 2) && rainbow_reverse.splice(3, 2, 'Gave', 'Battle');
 rainbow_reverse.unshift('Richard');
 rainbow_reverse.push('In', 'Vain');
 
-
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet '];
 
 circleArr = [];
@@ -29,13 +28,10 @@ for (i = 0; i < colors.length; i++) {
     circleArr.push(`<div class="circle" style="background-color:${colors[i]}"></div>`);
 };
 
-
 rainbowArr = [];
 for (j = 0; j < rainbow_reverse.length; j++) {
     rainbowArr.push(`<div class="rainbow">${rainbow_reverse[j]}</div>`);
 };
-
-
 
 document.write(`
     <div class="wrapp">
